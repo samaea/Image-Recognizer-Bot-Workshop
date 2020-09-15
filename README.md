@@ -132,9 +132,9 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
 
       ![Bot Framework Composer - Test in Emulator](./images/BFComposer-11.png)
 
-  1. Before we ask our bot to analyse an image, we need to provide one. As such, lets download Mr.Bean's picture from Flickr (because why not :)) https://live.staticflickr.com/4244/34613307720_d29cf0dd97_o_d.jpg.
+  1. Before we ask our bot to analyse an image, we need to provide one. As such, lets download Mr.Bean's picture from Flickr (because why not :)). Click the following link which will automatically download Mr's Bean image https://live.staticflickr.com/4244/34613307720_d29cf0dd97_o_d.jpg.
 
-  1. Ask the bot to analyse your image. Use the below transcript screenshot as an example on how to do that. When it asks to upload an image, click on the **Attachment** icon -> Browse to your **Downloads** folder and select the image you just downloaded.
+  1. Ask the bot to analyse your image. Use the below transcript screenshot as an example on how to do that. When it asks to upload an image, click on the **Attachment** icon -> Browse to your **Downloads** folder and select the image you just downloaded (e.g. **34613307720_d29cf0dd97_o_d.jpg**).
 
       ![Bot Framework Composer - Bot Framework Emulator](./images/bf-emulator.png)
 
