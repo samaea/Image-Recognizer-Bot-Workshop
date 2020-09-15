@@ -17,7 +17,7 @@ The following guide will help you develop step by step your own Image Recognizer
 > It's important to ensure all of the following prerequisites are met:-
 
 1. An Azure subscription
-1. [Bot Framework Composer v1.0.2-nightly.162075.4f85270](https://github.com/microsoft/BotFramework-Composer-Nightlies/releases/tag/v1.0.2-nightly.162075.4f85270)
+1. [Bot Framework Composer v1.1.1](https://github.com/microsoft/BotFramework-Composer/releases/tag/v1.1.1)
 1. [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases). 
 1. [Azure CLI](https://aka.ms/installazurecliwindows)
 1. [.NET Core SDK](https://dotnet.microsoft.com/download)
