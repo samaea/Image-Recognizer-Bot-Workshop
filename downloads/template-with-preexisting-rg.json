@@ -105,11 +105,11 @@
     },
     "location": {
       "type": "string",
-      "defaultValue": "[resourceGroup().location]"
+      "defaultValue": "[variables('resourcesLocation')]"
     },
     "appInsightsLocation": {
       "type": "string",
-      "defaultValue": "[resourceGroup().location]"
+      "defaultValue": "[variables('resourcesLocation')]"
     },
     "useStorage": {
       "type": "bool",
@@ -133,7 +133,7 @@
     },
     "luisServiceLocation": {
       "type": "string",
-      "defaultValue": "[resourceGroup().location]"
+      "defaultValue": "[variables('resourcesLocation')]"
     },
     "qnaMakerServiceName": {
       "type": "string",
@@ -157,7 +157,7 @@
     },
     "qnaMakerSearchLocation": {
       "type": "string",
-      "defaultValue": "[resourceGroup().location]"
+      "defaultValue": "[variables('resourcesLocation')]"
     },
     "qnaMakerWebAppName": {
       "type": "string",
@@ -165,7 +165,7 @@
     },
     "qnaMakerWebAppLocation": {
       "type": "string",
-      "defaultValue": "[resourceGroup().location]"
+      "defaultValue": "[variables('resourcesLocation')]"
     }
   },
   "variables": {
