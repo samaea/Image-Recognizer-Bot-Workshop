@@ -210,6 +210,9 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
         ```code
         exists(dialog.attachment[0].content.downloadUrl)
         ```
+      
+      ![Bot Framework Composer - Branch If/Else](./images/BFComposer-14.png)
+
       - Under **True** click on **+** -> **Manage properties** -> **Set a property**
       - Under the **Property** field, set it to:-
         ```code
@@ -219,7 +222,6 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
         ```code
         ${dialog.attachment[0].content.downloadUrl}
         ```
-      ![Bot Framework Composer - Branch If/Else](./images/BFComposer-14.png)
 
       ![Bot Framework Composer - Set a property](./images/BFComposer-15.png)
 
