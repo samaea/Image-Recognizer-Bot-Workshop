@@ -148,7 +148,7 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
     - Click **Create**
     - Fill out the form:-
         - **Resource group**:- select your resource group you want to deploy the bot to e.g. **labuser1000-ImageRecognizerBot**
-        - **Region**:- select **North Europe**.
+        - **Region**:- select **West Europe**.
         - **Name**:- name your Computer Vision API e.g. labuser1000-ImageRecognizerBot-computervision
     - Click on **Review + create** and then **Create**
     - Once deployed, click on **Go to Resource**
@@ -256,7 +256,7 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
        - **\<NAME OF YOUR RESOURCE GROUP\>** with a **globally unique** name. For example, your **youralias-ImageRecognizerBot**
        - **\<APP PASSWORD\>** with a password that is at least 16 characters long with at least one number, one letter, and one special character. You can use your own password or even an online password generator such as https://www.random.org/passwords/
           ```code
-          node provisionComposer.js --subscriptionId=<YOUR AZURE SUBSCRIPTION ID> --name=<NAME OF YOUR RESOURCE GROUP>--appPassword=<APP PASSWORD> --environment=dev --createLuisAuthoringResource false --location northeurope --createCosmosDb false
+          node provisionComposer.js --subscriptionId=<YOUR AZURE SUBSCRIPTION ID> --name=<NAME OF YOUR RESOURCE GROUP>--appPassword=<APP PASSWORD> --environment=dev --createLuisAuthoringResource false --location westeurope--createCosmosDb false
           ```
         ![PowerShell - cd](./images/powershell-2.png)
        - Assuming you have the same outcome as the above screenshot, you will be asked to navigate to **https://microsoft.com/devicelogin** and enter the code provided to authenticate into Azure. Please do this and select the correct account.
