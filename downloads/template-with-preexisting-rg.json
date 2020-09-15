@@ -423,8 +423,13 @@
         "endpoint": "[if(parameters('shouldCreateLuisResource'), reference(resourceId('Microsoft.CognitiveServices/accounts', parameters('luisServiceName'))).endpoint, '')]",
         "authoringEndpoint": "[if(parameters('shouldCreateAuthoringResource'), reference(resourceId('Microsoft.CognitiveServices/accounts', variables('LuisAuthoringAccountName'))).endpoint, '')]"
       }
+    },
+     "qna": {
+      "type": "object",
+      "value": {
+        "endpoint": "",
+        "subscriptionKey": ""
+      }
     }
   }
 }
-
-
