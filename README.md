@@ -176,7 +176,7 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
       ![Azure Portal - Computer Vision - Keys and Endpoint](./images/azure-portal-11.png)
 
 
-  1. Switch back to Composer and click on the **+** button, the one just before the HeroCard response -> **Access External Resources** - > **Send an HTTP Request**
+  1. Switch back to Composer and the UploadImage dialog. Click on the **+** button, the one just before the HeroCard response -> **Access External Resources** - > **Send an HTTP Request**
       - Select the **HTTP method** as **POST**
       - Set the URL to **XXXX**/vision/v2.1/analyze?visualFeatures=Description,Tags&subscription-key=**YYYY**
       - Replace **XXXX** with the Computer Vision **endpoint** and **YYYY** with the **Key 1** (obtained from the previous step). 
@@ -197,6 +197,8 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
           image = ${dialog.attachment[0].contentUrl}
        ]
        ```
+      ![Bot Framework Composer - HTTP Request](./images/BFComposer-20.png)
+
        > As you can see above, we are accessing the properties of the dialog.visionApiResponse, which is the response given back when we performed the HTTP request above to the Computer Vision API. In addition, I used \r\n to generate a linebreak in the response and used the builtin replace function to remove the linebreaks from the HTTP response making it more readable.
   1. To have this solution also work with Microsoft Teams, the attachment is accessible by the variable ${dialog.attachment[0].content.downloadUrl}** instead of ${dialog.attachment[0].contentUrl}. This is due to the file being behind an authenticated link. If you're interested to know more, have a look [here](https://developer.microsoft.com/en-us/microsoft-teams/blogs/working-with-files-in-your-microsoft-teams-bot/).
 
