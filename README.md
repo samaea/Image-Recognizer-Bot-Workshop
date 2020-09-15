@@ -20,6 +20,8 @@ The following guide will help you develop step by step your own Image Recognizer
 1. [Bot Framework Composer v1.0.2-nightly.162075.4f85270](https://github.com/microsoft/BotFramework-Composer-Nightlies/releases/tag/v1.0.2-nightly.162075.4f85270)
 1. [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases). 
 1. [Azure CLI](https://aka.ms/installazurecliwindows)
+1. [.NET Core SDK](https://dotnet.microsoft.com/download)
+1. [Ngrok](https://ngrok.com/download)
 
       ***NOTE**:- Please take notice of the Bot Framework Composer version number and ensure that version is being used for this lab*
 
@@ -43,7 +45,7 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
   
       ![Opening Bot Framework Composer via the start menu](./images/startmenu-composer.png)
        
-  1. Click on **New** --> **Create from Template** -> **Echo Bot** -> name your bot **Image Recognizer Bot** and click **OK**
+  1. Click on **New** --> **Create from Template** -> **Echo Bot** -> name your bot **ImageRecognizerBot** and click **OK**
 
       ![Bot Framework Composer - New project](./images/BFComposer.png)
 
@@ -53,7 +55,7 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
 
   1. >You will notice it creates by default two dialogs, one called "Unknown Intent" and the other called "Greeting". "Unknown Intent" is the dialog that is run when Language Understanding is not able to determine the intent for the user. Greeting is run when a user joins a chat with the bot.
 
-      - Select the **Greeting** dialog and click on **Send a response** . Change the response to the following
+      - Select the **Greeting** dialog, click on **Send a response** and replace **-${WelcomeUser()}** with following response:-
 
       ```code
       - Hi there! I am the Image Recognizer Bot, how can I help you today?
@@ -115,11 +117,15 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
 
       ![Bot Framework Composer - Inputting prompt message](./images/BFComposer-10.png)
 
+  1. Let's configure our bot to speak with LUIS
+      - Click on the **Settings cog** icon located at the bottom left of the screen.
+      - In the Bot Settings JSON text box, scroll down to the **luis** section and replace **authoringKey**'s key value with the authroingKey provided by your instructor.
+      - In the same LUIS section, replace **endpoint**'s key value with **https://westeurope.api.cognitive.microsoft.com**
 
-  1. Time to run and test our bot works okay! Click on **Start Bot**.
-
-      - It will ask you for a **LUIS Authoring key**, please ask your instructor for this key if you do not already have one. 
-      - Once inputted, click on **OK** and then click on  **Test in Emulator**.
+  1. Time to run and test our bot works okay! 
+  
+      - Click on **Start Bot**.
+      - Click on **Test in Emulator**
 
 
       ![Bot Framework Composer - Test in Emulator](./images/BFComposer-11.png)
