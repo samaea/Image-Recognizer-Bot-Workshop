@@ -203,7 +203,7 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
   1. To have this solution also work with Microsoft Teams, the attachment is accessible by the variable **${dialog.attachment[0].content.downloadUrl}** instead of **${dialog.attachment[0].contentUrl}**. This is due to the file being behind an authenticated link. If you're interested to know more, have a look [here](https://developer.microsoft.com/en-us/microsoft-teams/blogs/working-with-files-in-your-microsoft-teams-bot/).
 
       - Click on the **"+"** button, **the one just before the Send an HTP request action** -> **Create a condition** -> **Branch: If/Else**
-      - In the Condition field, set it to:-
+      - In the **Condition** field, set it to:-
         ```code
         exists(dialog.attachment[0].content.downloadUrl)
         ```
@@ -212,11 +212,12 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
         ```code
         dialog.attachment[0].contentUrl
         ```
-      ![Bot Framework Composer - Branch If/Else](./images/BFComposer-14.png)
       - Under **Value** set it to:-
         ```code
         ${dialog.attachment[0].content.downloadUrl}
         ```
+      ![Bot Framework Composer - Branch If/Else](./images/BFComposer-14.png)
+
       ![Bot Framework Composer - Set a property](./images/BFComposer-15.png)
 
   1. Go ahead and click on **Restart the bot** and afterwards on **Test in Emulator**
