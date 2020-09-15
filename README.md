@@ -122,6 +122,8 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
       - In the Bot Settings JSON text box, scroll down to the **luis** section and replace **authoringKey**'s key value with the authroingKey provided by your instructor.
       - In the same LUIS section, replace **endpoint**'s key value with **https://westeurope.api.cognitive.microsoft.com**
 
+      ![Bot Framework Composer - Bot Settings](./images/BFComposer-19.png)
+
   1. Time to run and test our bot works okay! 
   
       - Click on **Start Bot**.
