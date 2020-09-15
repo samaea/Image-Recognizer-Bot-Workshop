@@ -264,6 +264,10 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
      - Run the following command:-
         ```code
         npm install
+        # Modified the original composer template to exclude qnamaker as we have already deployed this in the first step. This will override the template created by the Bot Framework Composer
+        Invoke-WebRequest -Uri "https://github.com/samaea/Image-Recognizer-Bot-Workshop/raw/master/downloads/template-with-preexisting-rg.json" -OutFile "./DeploymentTemplates/template-with-preexisting-rg.json"
+        # Modifying the script to make it easier to deploy to an existing resource group
+        (Get-Content -path .\provisionComposer.js -Raw).replace('resourceGroupName = `${name}-${environment}`;','resourceGroupName = `${name}`;').replace('${name}-${environment}','${name}').replace('return await client.resourceGroups.createOrUpdate(resourceGroupName, param);','//return await client.resourceGroups.createOrUpdate(resourceGroupName, param);') | Set-Content -Path .\provisionComposer.js
         ```     
 
      - Run the following command, but replace the following values:-
