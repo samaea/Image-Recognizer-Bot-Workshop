@@ -21,6 +21,7 @@ The following guide will help you develop step by step your own Image Recognizer
 1. [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases). 
 1. [Azure CLI](https://aka.ms/installazurecliwindows)
 1. [.NET Core SDK](https://dotnet.microsoft.com/download)
+1. [NodeJS](https://nodejs.org/en/download/)
 1. [Ngrok](https://ngrok.com/download)
 
       ***NOTE**:- Please take notice of the Bot Framework Composer version number and ensure that version is being used for this lab*
