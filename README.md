@@ -347,7 +347,7 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
         ![Azure Portal - Test in WebChat](./images/azure-portal-14.png)
       - Feel free to chat with it like you did locally!
       
-### 3. Enablement of Teams Channel
+### 3. (OPTIONAL) Enablement of Teams Channel
 
 We will now activate the Teams Channel so that you can communicate via text messaging with your Image Recognizer Bot via Teams. 
 
