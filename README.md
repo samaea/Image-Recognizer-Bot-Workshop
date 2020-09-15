@@ -142,7 +142,7 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
 
 1. Let's now add a step to send our uploaded images to be analysed by Azure AI Cognitive Service called Computer Vision. Before we can do this however, we will need to deploy Computer Vision via Azure.
 
-    - Navigate to https://portal.azure.com
+    - Open a new tab and navigate to https://portal.azure.com
     - Click on **Create a new resource**
     - Search for **Computer Vision** and when the option appears in the dropdown menu, click on it.
     - Click **Create**
