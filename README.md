@@ -148,7 +148,7 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
     - Click **Create**
     - Fill out the form:-
         - **Resource group**:- select your resource group you want to deploy the bot to e.g. **labuser1000-ImageRecognizerBot**
-        - **Region**:- select **West Europe**.
+        - **Region**:- select **North Europe**.
         - **Name**:- name your Computer Vision API e.g. labuser1000-ImageRecognizerBot-computervision
     - Click on **Review + create** and then **Create**
     - Once deployed, click on **Go to Resource**
