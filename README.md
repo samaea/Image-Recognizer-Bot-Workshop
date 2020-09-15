@@ -174,7 +174,7 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
 
       ![Azure Portal - Computer Vision - Keys and Endpoint](./images/azure-portal-10.png)
 
-    - Click on **Keys and Endpoint** from the left handside menu and take note of **Key 1** and the **Endpoint**.
+    - Click on **Keys and Endpoint** from the left handside menu and **take note (e.g. in notepad)** of **Key 1** and the **Endpoint**.
 
       ![Azure Portal - Computer Vision - Keys and Endpoint](./images/azure-portal-11.png)
 
@@ -236,13 +236,13 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
 
 ### 2. Deploy our bot to Azure
   >In order to speak with our bot outside of our over channels such as Teams
-  1. Find out the location of your bot by clicking on the **Home** icon and reviewing the **Location** column. E.g. C:/Users/hussel/ImageRecognizerBot
+  1. Find out the location of your bot by clicking on the **Home** icon and reviewing the **Location** column. **Take note of this, e.g. in a Notepad**. E.g. C:/Users/hussel/ImageRecognizerBot
 
       ![Bot Framework Composer - Home](./images/bf-composer-13.png) 
 
   1. We will also need to know the Azure Subscription Id of the subscription we will deploy our bot to:-
 
-      - Switch back to the browser where you have the Azure Portal already logged OR navigate to https://portal.azure.com
+      - Switch back to the browser tab where you have the Azure Portal already opened OR navigate to https://portal.azure.com
       - In the Search Bar type in **Subscriptions** and click on **Subscriptions** from the dropdown menu
       - Find your subscription you want to use and take note of the **Subscription Id**, you will need this in the next step.
 
@@ -268,10 +268,10 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
 
      - Run the following command, but replace the following values:-
        - **\<YOUR AZURE SUBSCRIPTION ID\>** with the subscription id you noted in the previous step
-       - **\<NAME OF YOUR RESOURCE GROUP\>** with a **globally unique** name. For example, your **youralias-ImageRecognizerBot**
-       - **\<APP PASSWORD\>** with a password that is at least 16 characters long with at least one number, one letter, and one special character. You can use your own password or even an online password generator such as https://www.random.org/passwords/
+       - **\<NAME OF YOUR RESOURCE GROUP\>** with the name of your Azure Resource Group. For example, **AspireUser900-Bot**
+       - **\<APP PASSWORD\>** with a password that is at least 16 characters long with at least one number, one letter, and one special character. You can use your own password or even an online password generator such as https://www.random.org/passwords/?num=1&len=16&format=html&rnd=new. Afterwards, **just add an @ symbol at the end of the random password in order to meet the minimum password requirement e.g. mAgZj3B4CQbqeZG9@**.
           ```code
-          node provisionComposer.js --subscriptionId=<YOUR AZURE SUBSCRIPTION ID> --name=<NAME OF YOUR RESOURCE GROUP>--appPassword=<APP PASSWORD> --environment=dev --createLuisAuthoringResource false --location westeurope--createCosmosDb false
+          node provisionComposer.js --subscriptionId=<YOUR AZURE SUBSCRIPTION ID> --name=<NAME OF YOUR RESOURCE GROUP> --appPassword=<APP PASSWORD> --environment=dev --createLuisAuthoringResource false --location westeurope--createCosmosDb false
           ```
         ![PowerShell - cd](./images/powershell-2.png)
        - Assuming you have the same outcome as the above screenshot, you will be asked to navigate to **https://microsoft.com/devicelogin** and enter the code provided to authenticate into Azure. Please do this and select the correct account.
