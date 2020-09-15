@@ -220,8 +220,9 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
 
       ![Bot Framework Composer - Set a property](./images/BFComposer-15.png)
 
-  1. Go ahead and click on **Restart the bot** and afterwards on **Test in Emulator**
+  1. Go ahead and click on **Restart the bot** located on the top right of the screen and afterwards on **Test in Emulator**
       - Click on the **Settings** icon and ensure the tickbox **Bypass ngrok for local addressess** is **unticked**
+      - Click **Save**
       - Swith back to the **Live Chat** tab
       ![Bot Framework Emulator](./images/bf-emulator-3.png) 
       - Try asking the bot to analyse your picture again and upload the same picture. You should see a response similar to the screenshot below:-
