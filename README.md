@@ -144,28 +144,34 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
 
     - Open a new tab and navigate to https://portal.azure.com
     - Click on **Create a new resource**
-    - Search for **Computer Vision** and when the option appears in the dropdown menu, click on it.
-    - Click **Create**
-    - Fill out the form:-
-        - **Resource group**:- select your resource group you want to deploy the bot to e.g. **labuser1000-ImageRecognizerBot**
-        - **Region**:- select **North Europe**.
-        - **Name**:- name your Computer Vision API e.g. labuser1000-ImageRecognizerBot-computervision
-    - Click on **Review + create** and then **Create**
-    - Once deployed, click on **Go to Resource**
-    - Click on **Keys and Endpoint** from the left handside menu and take note of **Key 1** and the **Endpoint**.
 
 
       ![Azure Portal - Create a new resource](./images/azure-portal-5.png)
 
+    - Search for **Computer Vision** and when the option appears in the dropdown menu, click on it.
+
       ![Azure Portal - Searching for Computer Vision](./images/azure-portal-6.png)
 
+    - Click **Create**
+
       ![Azure Portal - Computer Vision - Create](./images/azure-portal-7.png)
+
+    - Fill out the form:-
+        - **Resource group**:- select your resource group you want to deploy the bot to e.g. **labuser1000-ImageRecognizerBot**
+        - **Region**:- select **North Europe**.
+        - **Name**:- name your Computer Vision API e.g. labuser1000-ImageRecognizerBot-computervision
+
+    - Click on **Review + create** and then **Create**
 
       ![Azure Portal - Computer Vision - Create](./images/azure-portal-8.png)
 
       ![Azure Portal - Computer Vision - Create](./images/azure-portal-9.png)
 
+    - Once deployed, click on **Go to Resource**
+
       ![Azure Portal - Computer Vision - Keys and Endpoint](./images/azure-portal-10.png)
+
+    - Click on **Keys and Endpoint** from the left handside menu and take note of **Key 1** and the **Endpoint**.
 
       ![Azure Portal - Computer Vision - Keys and Endpoint](./images/azure-portal-11.png)
 
