@@ -126,7 +126,7 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
 
   1. Time to run and test our bot works okay! 
   
-      - Click on **Start Bot**.
+      - Click on **Start Bot**
       - Click on **Test in Emulator**
 
 
