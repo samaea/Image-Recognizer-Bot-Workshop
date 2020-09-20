@@ -5,7 +5,6 @@ The following guide will help you develop step by step your own Image Recognizer
 
 - **From an architectural perspective, the following Azure services are being used:**
   -  Web App
-  -  Cosmos Database
   -  Storage account
   -  App Service
   -  **Azure Cognitive Services:**
@@ -278,6 +277,8 @@ Bot Framework Composer is an open-source, visual authoring canvas for developers
           node provisionComposer.js --subscriptionId=<YOUR AZURE SUBSCRIPTION ID> --name=<NAME OF YOUR RESOURCE GROUP> --appPassword=<APP PASSWORD> --environment=dev --createLuisAuthoringResource false --location westeurope--createCosmosDb false
           ```
         ![PowerShell - cd](./images/powershell-2.png)
+       >It is recommended to use CosmosDB for the Bot's state storage, but it takes around 10 minutes to deploy. As such, to make the deployment quicker, we've disabled it by using the createCosmosDB flag to false.
+       
        - Assuming you have the same outcome as the above screenshot, you will be asked to navigate to **https://microsoft.com/devicelogin** and enter the code provided to authenticate into Azure. Please do this and select the correct account.
 
         ![PowerShell - cd](./images/powershell-3.png)

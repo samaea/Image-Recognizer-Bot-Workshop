@@ -363,6 +363,9 @@
       "sku": {
         "name": "Standard_LRS"
       },
+      "properties": {
+       "supportsHttpsTrafficOnly": "true"
+       }, 
       "condition": "[parameters('useStorage')]"
     },
     {
